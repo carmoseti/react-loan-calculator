@@ -1,13 +1,51 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+table {
+    border: solid 1px black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: solid 1px black;
+    padding: 4px;
+}
+
+td {
+    text-align: end;
+}
+
+tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+.beginningBalanceHeader {
+    background: #94c9f7;
+}
+
+.principalInterestHeader {
+    background: mediumaquamarine;
+}
+
+.endingBalanceHeader {
+    background: #ff5353;
+}
+
+.monthlyPaymentBar {
+    color: white;
+    background: green;
+    padding: 16px;
+    display: inline-block;
 }
