@@ -7,13 +7,12 @@ interface AmortizationSchedule {
 }
 
 export interface Amortization {
-    termPayment :number
+    termPayment: number
     schedule: AmortizationSchedule[]
 }
 
-export const getAmortization = (principal: number, interestRate: number, terms: number) :Amortization => {
-    let termPayment: number = principal * (interestRate / (1 - Math.pow(
-        1 + interestRate, -terms)))
+export const getAmortization = (principal: number, interestRate: number, terms: number): Amortization => {
+    let termPayment: number = principal * (interestRate / (1 - Math.pow(1 + interestRate, -terms)))
 
     const schedule: Array<AmortizationSchedule> = []
 

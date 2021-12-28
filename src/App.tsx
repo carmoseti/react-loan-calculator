@@ -1,11 +1,11 @@
-import React, {ChangeEventHandler} from 'react';
-import {Amortization, getAmortization} from "./utils/amort";
+import React, {ChangeEventHandler} from 'react'
+import {Amortization, getAmortization} from "./utils/amort"
 
 export const App: React.FunctionComponent<{}> = (props) => {
     const [loanAmount, setLoanAmount] = React.useState<string | undefined>(undefined)
     const [interestRate, setInterestRate] = React.useState<string | undefined>(undefined)
     const [periodCount, setPeriodCount] = React.useState<string | undefined>(undefined)
-    const [amortization, setAmortization] = React.useState<Amortization | undefined>(undefined);
+    const [amortization, setAmortization] = React.useState<Amortization | undefined>(undefined)
 
     const handleLoanAmount = React.useCallback<ChangeEventHandler<HTMLInputElement>>((e) => {
         if (/^[1-9][0-9]*$/.test(e.target.value)) {
@@ -106,7 +106,7 @@ export const App: React.FunctionComponent<{}> = (props) => {
             }
 
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
