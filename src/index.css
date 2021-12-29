@@ -43,9 +43,16 @@ tr:nth-child(even) {
     background: #ff5353;
 }
 
-.monthlyPaymentBar {
+.primaryInfoBar {
     color: white;
     background: green;
+    padding: 16px;
+    display: inline-block;
+}
+
+.secondaryInfoBar {
+    color: black;
+    background: #ececec;
     padding: 16px;
     display: inline-block;
 }
